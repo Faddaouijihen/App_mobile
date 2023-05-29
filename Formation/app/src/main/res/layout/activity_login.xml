@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="#fff"
+    tools:context=".AuthenticationActivity">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/onlinelesson"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/title_text_login"
+        android:text="Se connecter"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/loginvector">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:backgroundTint="#fff"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#fff"
+            android:textColor="#fff"
+            android:id="@+id/edtmail"
+            android:drawableTint="#fff"
+            android:drawableRight="@drawable/ic_email_black_24dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:backgroundTint="#fff"
+            android:hint="Mot de passe"
+            android:textColor="#fff"
+            android:inputType="textPassword"
+            android:id="@+id/edtpass"
+            android:textColorHint="#fff"
+            android:drawableTint="#fff"
+            android:drawableRight="@drawable/ic_lock_black_24dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:id="@+id/btn_login"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/whiteroundedshape"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous n'avez pas de compte ? "
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/sign_in_text"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:layout_gravity="top"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S'inscrire ici"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+
+            android:layout_marginTop="15dp"
+            android:id="@+id/sign_up_btn"
+            android:layout_gravity="bottom"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

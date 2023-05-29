@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_head_details"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@drawable/myshape"
+        android:gravity="center"
+        android:text="Détails de la formation"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:text="  Titre"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/programming"
+        android:id="@+id/txt_titre_details"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:text="  date"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_date_details"
+        android:drawableLeft="@drawable/dateicon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:text="  nbr heures"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_nbr_heure_details"
+        android:drawableLeft="@drawable/houres"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:text="  categorie"
+        android:id="@+id/txt_categorie_details"
+        android:drawableLeft="@drawable/programming"
+        android:layout_marginBottom="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:background="#e1e1e1e1"
+        android:text="  categorie"
+        android:lineSpacingExtra="10dp"
+        android:id="@+id/txt_description_details"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="participer"
+        android:background="@drawable/shape"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_participer"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modifier la formation"
+        android:background="@drawable/shape"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_editer"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer la formation"
+        android:background="@drawable/shape"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/btn_supprimer"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/myshape"
+        android:orientation="horizontal"
+        android:id="@+id/online_holder">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dot"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="13dp"/>
+        <TextView
+        android:id="@+id/txt_head_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:text="EnLigne "/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/recyclerview"
+        android:layout_weight="2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter formation"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:id="@+id/btn_ajouter_formation"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mes Formation"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:id="@+id/btn_mes_formation"
+        android:paddingRight="10dp"
+        android:layout_gravity="right"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

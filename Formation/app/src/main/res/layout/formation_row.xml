@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    android:background="@drawable/layout_background"
+    android:paddingLeft="3dp"
+    android:layout_margin="3dp"
+    >
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/php"
+        android:id="@+id/item_image"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="txt_titre"
+            android:id="@+id/txt_titre"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="txt_date"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/txt_item_date"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="txt_nbr_heure"
+            android:background="#9ba4b4"
+            android:textColor="#fff"
+            android:drawablePadding="3dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_nbr_heure"
+            android:padding="4dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="txt_formation"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:drawablePadding="3dp"
+            android:id="@+id/txt_formation"
+            android:textSize="12dp"
+            android:padding="4dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
